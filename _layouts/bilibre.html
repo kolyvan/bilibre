@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BiLibre Reader for iOS">
+<meta name="keywords" content="bilibre, ebook">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="/css/bilibre.css" rel="stylesheet">
+<title>{{ page.title }}</title>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header clearfix">
+<nav>
+<ul class="nav nav-tabs pull-right">
+
+{% if page.url == '/' or page.url == '/index.html' %}
+<li role="presentation" class="active"><a href="/index.html">Main</a></li>
+{% else %}
+<li role="presentation"><a href="/index.html">Main</a></li>
+{% endif %}
+
+{% if page.url == '/forum.html' %}
+<li role="presentation" class="active"><a href="/forum.html">Forum</a></li>
+{% else %}
+<li role="presentation"><a href="/forum.html">Forum</a></li>
+{% endif %}
+
+{% if page.url == '/beta.html' %}
+<li role="presentation" class="active"><a href="/beta.html">Beta</a></li>
+{% else %}
+<li role="presentation"><a href="/beta.html">Beta</a></li>
+{% endif %}
+
+</ul>
+</nav>
+<h3 class="text-muted">BiLibre</h3>
+</div>
+
+{{ content }}
+
+
+<footer class="footer">
+<p class="text-muted">Copyright &copy; 2017 Konstantin Bukreev &middot;
+  Created by <a href='http://github.com/kolyvan' target='_blank'>Kolyvan</a> &middot;
+  Hosted by <a href='http://github.com/' target='_blank'>GitHub</a>
+        and powered by <a href='http://github.com/mojombo/jekyll'>Jekyll</a>.
+</p>
+</footer>
+
+</div> <!-- /container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+</body>
+</html>
