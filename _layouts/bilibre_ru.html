@@ -16,6 +16,7 @@
 <div class="container">
 
 <div class="header clearfix">
+<h3 class="text-muted pull-left">BiLibre</h3>
 <nav>
 <ul class="nav nav-tabs pull-right">
 
@@ -38,8 +39,18 @@
 {% endif %}
 
 </ul>
+
+<ul class="nav pull-left">
+{% if page.url == '/ru/' %}
+<li ><a href="/bilibre/index.html">🇷🇺</a></li>
+{% elsif page.url == '/ru/forum.html' %}
+<li ><a href="/bilibre/forum.html">🇷🇺</a></li>
+{% elsif page.url == '/ru/beta.html' %}
+<li ><a href="/bilibre/beta.html">🇷🇺</a></li>
+{% endif %}
+</ul>
+
 </nav>
-<h3 class="text-muted">BiLibre</h3>
 </div>
 
 {{ content }}
